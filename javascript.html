@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiation à Javascript</title>
+</head>
+<body>
+    <script language="Javascript">
+       
+       /* var prenom_utilisateur = "Francisco";
+        var nom_utilisateur = "Sousa";
+        var age_utilisateur = "inconnu";
+        var message ='Bonjour '+prenom_utilisateur+' '+nom_utilisateur+'';
+        document.write(message);
+        var mon_tableau = new Array(11);
+        mon_tableau[0] = 'Angeline';
+        mon_tableau[1] = 'Maxime';
+        mon_tableau[2] = 'Jessica';
+        mon_tableau[3] = 'Joseph';
+        mon_tableau[4] = 'Gérald';
+        mon_tableau[5] = 'Geoffroey';
+        mon_tableau[6] = 'Emilie';
+        mon_tableau[7] = 'Philémon';
+        mon_tableau[8] = 'Francisco';
+        mon_tableau[9] = 'Amélie';
+        mon_tableau[10] = 'Kévin';
+        console.log(mon_tableau);
+        var mon_tableau2 = new Array('Angeline', 'Maxime','Jessica', 'Joseph', 'Gérald', 'Geoffroey', 'Emilie','Philémon', 'Francisco','Amélie', 'Kévin');
+        console.log(mon_tableau2);
+        // Le morpion
+        /* Le morpion
+        Attention ça gratte
+        var row0= new Array;
+        row0[0]="0";
+        row0[1]="x";
+        row0[2]="";
+        var row1 = new Array;
+        row1[0]= "x";
+        row1[1]= "0";
+        row1[2]= "x";
+        var row2 = new Array;
+        row2[0]= "";
+        row2[1]= "x";
+        row2[2]= "x";
+        // On enrestre tout dans un array pion
+        var morpion = new Array;
+        morpion[0] = row0;
+        morpion[1] = row1;
+        morpion[2] = row2;
+        // On affiche dans la console
+        console.log(morpion);
+        // Jouons avec les dates !!
+        var dt = new Date();
+        var jour = dt.getDay();
+        var numero = dt.getDate();
+        var mois = dt.getMonth();
+        // Tableau pour les jours (on va remplacer 0 par Dimanche, 1 par lundu etc..)
+        var tab_jour = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi','Jeudi','Vendredi','Samedi');
+        //On fait la même chose pour les mois (0 janvier, 1fevrier etc...)
+        var tab_mois = new Array('Javier', 'Fevrier','Mars','Avril','Mai','Juin', 'Juillet', 'Août','Septembre', 'Octobre', 'Novembre', 'Decembre');
+        document.write("Nous sommes le "+tab_jour[jour]+""+numero+""+tab_mois[mois]);
+        // On va s'amuser un peu
+        for(i=0;i<=5000;i++){
+            if(confirm('etes vous sur de vouloir continuer?')){
+                i=0;
+                alert('vous etes fou !!!');
+            } else{
+                i=5001;
+            }
+        }*/
+        // table de multiplication
+        function addition(){
+            var nombre1 = document.getElementById('nombre1').value;
+            var nombre12= document.getElementById('nombre2').value;
+            var operation = (parsefloat(nombre1)+parsefloat(nombre2));
+            if(isNaN(operation)){
+                alert('operation impossible');
+            }else{
+                document.getElementById('resultat').innerHTML = operation;
+            }
+            document.getElementById('resultat').innerHTML = operation;
+        }
+        function soustraction(){
+            var nombre1 = document.getElementById('nombre1').value;
+            var nombre12= document.getElementById('nombre').value;  
+            var operation = (parsefloat(nombre1)+parsefloat(nombre2));
+            if(isNaN(operation)){
+                alert('operation impossible');
+            }else{
+                document.getElementById('resultat').innerHTML = operation;
+            }
+            document.getElementById('resultat').innerHTML = operation;
+        }
+
+        function multiplication(){
+            var nombre1 = document.getElementById('nombre1').value;
+            var nombre12= document.getElementById('nombre2').value;
+            var operation = (parsefloat(nombre1)+parsefloat(nombre2));
+            if(isNaN(operation)){
+                alert('operation impossible');
+            }else{
+                document.getElementById('resultat').innerHTML = operation;
+            }
+            document.getElementById('resultat').innerHTML = operation;
+        }
+        function division(){
+            var nombre1 = document.getElementById('nombre1').value;
+            var nombre12= document.getElementById('nombre2').value;
+            var operation = (parsefloat(nombre1)+parsefloat(nombre2));
+            if(isNaN(operation)){
+                alert('operation impossible');
+            }else{
+                document.getElementById('resultat').innerHTML = operation;
+            }
+            document.getElementById('resultat').innerHTML = operation;
+        }
+        function francois(){
+        var element = document.getElementById('hollande').value;
+        console.log(element)
+        document.body.style.background = element
+        }
+     </script>
+     <p>
+        <label>Nombre 1</label>
+        <input type="text" name="nombre1" id="nombre1">
+     </p>
+     <p>
+        <label>Nombre 2</label>
+        <input type="text" name="nombre2" id="nombre2">
+     </p>
+     <p>
+     <input type="button" name="addition" value="+" onclick="addition();">
+     <input type="button" name="soustraction" value="-" onclick="soustraction();">
+     <input type="button" name="mutiplication" value="*" onclick="multiplication();">
+     <input type="button" name="division" value="/" onclick="division();">
+    </p>
+    <p id="resultat">
+        
+    </p>
+    <label>Le changement c'est maintenant</label>
+    <select name="Hollande" id="hollande" onchange="François()">
+        <option value="#ff000">Choisir</option>
+        <option value="#000000">rouge</option>
+        <option value="">noir</option>
+        <option value="">bleue</option>
+    </select>
+</body>
+</html>
